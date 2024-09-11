@@ -15,7 +15,7 @@ const Posts = ({ users, addPost }) => {
   const setTitle = (e) => setNewPost({ ...newPost, title: e.target.value });
   const setContent = (e) => setNewPost({ ...newPost, content: e.target.value });
   return (
-    <>
+    <Box mt={2} p={5}>
       <Box>
         <Input
           placeholder="Title"
@@ -65,7 +65,7 @@ const Posts = ({ users, addPost }) => {
           });
         })}
       </VStack>
-    </>
+    </Box>
   );
 };
 

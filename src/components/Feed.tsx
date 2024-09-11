@@ -14,7 +14,7 @@ const Feed = () => {
   }, []);
 
   return (
-    <Box>
+    <Box p={5}>
       {posts.map((post) => (
         <Box key={post.id} p={5} shadow="md" borderWidth="1px">
           <Text mt={4}>{post.title}</Text>
