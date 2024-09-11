@@ -1,10 +1,10 @@
-import { Box, Heading } from '@chakra-ui/react';
+import { Box, Heading, Text } from '@chakra-ui/react';
 
 const Profile = ({ user }: any) => {
-  if (!user) return <div>You are not logged in...</div>;
+  if (!user) return <Text p={5}>You are not logged in...</Text>;
 
   return (
-    <Box>
+    <Box mt={2} p={5}>
       <Heading>{user}</Heading>
     </Box>
   );
